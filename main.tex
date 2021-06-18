@@ -79,8 +79,8 @@
     \textbf{My Motivation for this Talk}
     \begin{itemize}
         \item Getting a bug report without proper logs is frustrating, especially when you cannot reproduce it
-        \item I get annoyed when I start an application and see tons of unuseful (for me in a user perspective) log messages
-        \item Time is valueable and you should not waste it by spending too much time on reading logs to analyze a problem
+        \item I get annoyed when I start an application and see tons of non useful (for me in a user perspective) log messages
+        \item Time is valuable and you should not waste it by spending too much time on reading logs to analyze a problem
         \item \dots and I think that doing logging correctly is easy :D
     \end{itemize}
 \end{frame}
@@ -107,11 +107,11 @@
     {Log Message Severity Levels}
 
     \begin{description}
-        \item[Fatal] Something so critical happend that you only print a log message and then die.
-        \item<2->[Critical] Something bad happend and an operation could not be performed; possibly with data loss.
-        \item<3->[Warning] Something unexpected/unwanted happened but the program can resume and handle with this situation.
-        \item<4->[Info] A low frequent change in the programs busines state done by user or by data.
-        \item<5->[Debug] Messages that print information for ``interesting'' program locations and help you to see what happes.
+        \item[Fatal] Something so critical happened that you only print a log message and then die.
+        \item<2->[Critical] Something bad happened and an operation could not be performed; possibly with data loss.
+        \item<3->[Warning] Something unexpected/unwanted happened but the program can resume and handle this situation.
+        \item<4->[Info] A low frequent change in the programs business state done by user or by data.
+        \item<5->[Debug] Messages that print information for ``interesting'' program locations and help you to see what happened.
         \item<6->[Trace] High frequent debug messages that can be activated to deeply analyse specific operations.
     \end{description}
 \end{frame}
@@ -393,7 +393,7 @@ ecm_qt_install_logging_categories( EXPORT MyProject
             \item Only use categorized logging
             \item Add all meaningful log messages you want
             \item Disable verbose logs per default (set level to eg. Warning or Info)
-            \item For bug reports you can tell used to enable more logs
+            \item For bug reports you can tell users to enable more logs
             \item Start \texttt{journalctl} or kjournald-browser and look at your own system
         \end{itemize}
     \end{block}
